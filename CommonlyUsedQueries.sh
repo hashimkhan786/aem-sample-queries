@@ -43,9 +43,18 @@ orderby.sort=desc
 p.limit=-1
 
 
-Multiple properties
-1_property=jcr%3acontent%2fcq%3atemplate&1_property.value=%2fapps%2fgeometrixx%2ftemplates%2fhomepage&2_property=jcr%3acontent%2fjcr%3atitle&2_property.value=English&type=cq%3aPage
+#Seach for Multiple properties with AND Condition
+type=cq:Page
+1_property=@jcr:content/cq:template
+1_property.value=/apps/geometrixx/templates/contentpage
+2_property=@jcr:content/hideInNav
+2_property.value=true
+p.limit=-1
 
-
-Multiple Values
-http://localhost:4502/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Products&property.2_value=Square&property.3_value=Events
+#Seach for 1 property with multiple values
+type=cq:PageContent
+property=jcr:title
+property.1_value=Products
+property.2_value=Square
+property.3_value=Events
+p.limit=-1
