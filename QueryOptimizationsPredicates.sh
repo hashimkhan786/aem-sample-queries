@@ -26,7 +26,7 @@ p.nodedepth=2
 p.limit=100
 
 #p.guessTotal: Using this parameter can significantly improve the performance of queries that return large result sets because Oak does not need to calculate the exact number of the result set. The purpose of p.guessTotal parameter is to return the appropriate number of results that can be shown by combining the minimum viable p.offset and p.limit values.
-
+#Always set guessTotal to true unless you KNOW your result set will be small and counting it will be fast!
 fulltext=the
 type=cq:Page
 p.limit=-1

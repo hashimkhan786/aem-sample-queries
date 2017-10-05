@@ -42,6 +42,14 @@ orderby=@jcr:content/cq:lastModified
 orderby.sort=desc
 p.limit=-1
 
+#Find All Pages and order by cq:lastModified - Descending Order and Ignore Case
+type=cq:Page
+path=/content/geometrixx
+orderby=@jcr:content/cq:lastModified
+orderby.case=ignore
+orderby.sort=desc
+p.limit=-1
+
 
 #Seach for Multiple properties with AND Condition
 type=cq:Page
