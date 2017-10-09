@@ -66,3 +66,11 @@ property.1_value=Products
 property.2_value=Square
 property.3_value=Events
 p.limit=-1
+
+# Finds the pages that have been modified since they were last published
+path=/content/geometrixx
+property=cq:lastModifiedBy
+property.value=admin
+dateComparison.property1=cq:lastModified
+dateComparison.property2=cq:lastReplicated
+dateComparison.operation=greater
