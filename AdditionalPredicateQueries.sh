@@ -78,17 +78,7 @@ type=cq:Page
 p.facets=true
 p.limit=-1
 
-#memberOf
+#memberOf : Search based on the sling/collection : recently_modifiedassets which accumulates results based on a collection query.
 p.limit=-1
 memberOf=/content/dam/collections/a/admin/recently_modifiedassets
-path=/content/dam
-
-tagsearch
-mainasset
-savedquery
-notexpired
-tag
-excludepaths
-nocase
-nodeExists
-contentfragment
+path=/content/dam/geometrixx
